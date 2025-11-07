@@ -1,29 +1,37 @@
-﻿using System.IO;
-using System.Security.Cryptography.X509Certificates;
+﻿using System;
+using System.IO;
 using System.Text;
 
-namespace DataWriter
+class Test
 {
-    internal class Program
+    public static void Main()
     {
-        static void Main(string[] args)
+        string path = @"a:\games\MyTest.txt";
+
+        try
         {
-            Console.WriteLine("Write your email...");
-            string email = Console.ReadLine();
-            Console.WriteLine("Write your password...");
-            string password = Console.ReadLine();
-            Console.WriteLine("Write your path...");
-            string path = Console.ReadLine();
+            // Create the file, or overwrite if the file exists.
+            using (FileStream fs = File.Create(path))
+            {
+                byte[] info = new UTF8Encoding(true).GetBytes("This is some text in the file.");
+                // Add some information to the file.
+                fs.Write(info, 0, info.Length);
+            }
 
-            string email1 = new string(email);
-            string password1 = new string(password);
-            string path1 = new string(path);
-
-            Console.WriteLine($"{email1},{password1},{path1}");
-
+            // Open the stream and read it back.
+            using (StreamReader sr = File.OpenText(path))
+            {
+                string s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+            }
         }
 
-        extern AppendAllLines(string email1, IEnumerable<string> email1, UTF7Encoding email1);
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.ToString());
+        }
     }
-
 }

@@ -6,7 +6,7 @@ using System.Runtime;
 
 namespace DataWriter1
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -22,15 +22,14 @@ namespace DataWriter1
             var path1 = new string(path);
 
 
-            Program Program1 = new ();
+            Program1 Program = new ();
             //Console.WriteLine($"{email1},{password1},{path1}");
         }
 
         public class Program1
         { 
-            public static void Create(string path1, System.Collections.Generic.IEnumerable<string> contents, UTF32Encoding encoding)
+            public static void Create(string path1, System.Collections.Generic.IEnumerable<string> email1, UTF32Encoding password1)
             {
-                using (FileStream fs = File.Create(path1));
             }
         }    
 
