@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 class Program
 {
@@ -7,34 +8,34 @@ class Program
         bool x = true;
         bool y = false;
 
-        Console.WriteLine($"AND | x    | y    ");
-        Console.WriteLine($"x   |{x & x,-5} |{x & y,-5}"); //x&x==-5, true
-        Console.WriteLine($"y   |{y & x,-5} |{y & y,-5}"); //y=false, all y=false
-        Console.WriteLine();
+        WriteLine($"AND | x    | y    ");
+        WriteLine($"x   |{x & x,-5} |{x & y,-5}"); //x&x==-5, true
+        WriteLine($"y   |{y & x,-5} |{y & y,-5}"); //y=false, all y=false
+        WriteLine();
 
-        Console.WriteLine($"OR  | x    | y    ");
-        Console.WriteLine($"x   |{x | x,-5} |{x | y,-5}"); //
-        Console.WriteLine($"y   |{y | x,-5} |{y | y,-5}");
-        Console.WriteLine();
+        WriteLine($"OR  | x    | y    ");
+        WriteLine($"x   |{x | x,-5} |{x | y,-5}"); //
+        WriteLine($"y   |{y | x,-5} |{y | y,-5}");
+        WriteLine();
 
-        Console.WriteLine($"XOR | x    | y    ");
-        Console.WriteLine($"x   |{x ^ x,-5} |{x ^ y,-5}"); //or x, or y == -5
-        Console.WriteLine($"y   |{y ^ x,-5} |{y ^ y,-5}");
-        Console.WriteLine();
+        WriteLine($"XOR | x    | y    ");
+        WriteLine($"x   |{x ^ x,-5} |{x ^ y,-5}"); //or x, or y == -5
+        WriteLine($"y   |{y ^ x,-5} |{y ^ y,-5}");
+        WriteLine();
 
-        Console.WriteLine($"x & DoStuff() = {x & DoStuff()}");
-        Console.WriteLine();
-        Console.WriteLine($"y & DoStuff() = {y & DoStuff()}");
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine($"x && DoStuff() = {x && DoStuff()}");
-        Console.WriteLine();
-        Console.WriteLine($"y && DoStuff() = {y && DoStuff()}");
+        WriteLine($"x & DoStuff() = {x & DoStuff()}");
+        WriteLine();
+        WriteLine($"y & DoStuff() = {y & DoStuff()}");
+        WriteLine();
+        WriteLine();
+        WriteLine($"x && DoStuff() = {x && DoStuff()}");
+        WriteLine();
+        WriteLine($"y && DoStuff() = {y && DoStuff()}");
     }
 
     static bool DoStuff()
     {
-        Console.WriteLine("I'm doing some stuff");
+        WriteLine("I'm doing some stuff");
         return true;
     }
 }
