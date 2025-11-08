@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Text;
-using static System.Console;
 
 class Test
 {
@@ -32,7 +31,7 @@ class Test
 
         catch (Exception ex)
         {
-            WriteLine(ex.ToString());
+            Console.WriteLine(ex.ToString());
         }
     }
 }
