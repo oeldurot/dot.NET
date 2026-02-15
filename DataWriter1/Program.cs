@@ -22,8 +22,9 @@ namespace DataWriter1
             var path1 = new string(path);
 
 
+
             Program1 Program = new ();
-            //Console.WriteLine($"{email1},{password1},{path1}");
+            Console.WriteLine($"{email1},{password1},{path1}");
         }
 
         public class Program1
