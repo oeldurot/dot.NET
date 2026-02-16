@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Repository\\dot.NET\\IterationStatements\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E515EA2-1724-45B5-BB27-B95964BEF36D}|IterationStatements.csproj|d:\\repository\\dot.net\\iterationstatements\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E515EA2-1724-45B5-BB27-B95964BEF36D}|IterationStatements.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{595AC1CE-0A4F-B34A-F6F4-EA312FC61FA9}|IterationStatements.csproj|d:\\repository\\dot.net\\iterationstatements\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{595AC1CE-0A4F-B34A-F6F4-EA312FC61FA9}|IterationStatements.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,7 +24,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Repository\\dot.NET\\IterationStatements\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCoAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-15T22:56:57.555Z",
               "EditorCaption": ""

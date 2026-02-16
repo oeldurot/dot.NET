@@ -27,7 +27,7 @@ namespace IterationStatements
                 Console.Write("Enter your password: ");
                 password = Console.ReadLine();
                 count++;
-                if (count == 10)
+                if (count == 2)
                 {
                     Console.WriteLine("Вы использовали все попытки ввода пароля!");
                     break;
@@ -35,6 +35,13 @@ namespace IterationStatements
             }
             while (password != "248609");
 
+
+            string[] names = { "Adam", "Barry", "Charlie" };
+
+            foreach (string name in names)
+            {
+                Console.WriteLine($"{name} has {name.Length} chracters");
+            }
         }
     }
 }
